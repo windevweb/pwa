@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2563eb">
+    <title>Ramadan 2025 - Jadwal Imsakiyah & Informasi</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Flowbite CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-20 top-0">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="flex items-center">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-blue-600">Ramadan 2025</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#jadwal" class="text-gray-700 hover:text-blue-600">Jadwal Imsakiyah</a>
+                    <a href="#artikel" class="text-gray-700 hover:text-blue-600">Artikel</a>
+                    <a href="#kontak" class="text-gray-700 hover:text-blue-600">Kontak</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button data-collapse-toggle="navbar-sticky" type="button" class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="mt-20 mb-16">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <h1 class="text-4xl font-bold mb-4">Selamat Menyambut Ramadan 2025</h1>
+                <p class="text-xl">Informasi lengkap jadwal imsakiyah, artikel, dan panduan ibadah</p>
+            </div>
+        </section>
+
+        <!-- Jadwal Section -->
+        <section id="jadwal" class="py-12">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8">Jadwal Imsakiyah</h2>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="mb-4">
+                        <input type="text" id="search" class="w-full p-2 border rounded-lg" placeholder="Cari kota...">
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full table-auto">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="p-3 text-left">Tanggal</th>
+                                    <th class="p-3 text-left">Imsak</th>
+                                    <th class="p-3 text-left">Subuh</th>
+                                    <th class="p-3 text-left">Dzuhur</th>
+                                    <th class="p-3 text-left">Ashar</th>
+                                    <th class="p-3 text-left">Maghrib</th>
+                                    <th class="p-3 text-left">Isya</th>
+                                </tr>
+                            </thead>
+                            <tbody id="schedule-body">
+                                <!-- Data jadwal akan diisi via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="bg-gray-100 py-12">
+            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Tips Puasa Sehat</h3>
+                    <p class="text-gray-600">Pelajari cara menjaga kesehatan selama bulan Ramadan dengan panduan lengkap dari ahli gizi.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Sahur Sehat</h3>
+                    <p class="text-gray-600">Menu sahur bergizi untuk menjaga stamina seharian selama berpuasa.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Zakat Fitrah</h3>
+                    <p class="text-gray-600">Informasi lengkap tentang perhitungan dan penyaluran zakat fitrah.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Tentang Kami</h4>
+                    <p class="text-gray-400">Penyedia informasi lengkap seputar Ramadan 2025 dan panduan ibadah.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Kontak</h4>
+                    <p class="text-gray-400">Email: info@ramadan2025.com<br>Telepon: (021) 1234-5678</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Ramadan 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script>
+        // Contoh data jadwal
+        const jadwalData = [
+            { tanggal: "1 Ramadan 1446 H", imsak: "04:15", subuh: "04:25", dzuhur: "11:45", ashar: "15:00", maghrib: "17:55", isya: "19:10" },
+            { tanggal: "2 Ramadan 1446 H", imsak: "04:14", subuh: "04:24", dzuhur: "11:44", ashar: "15:01", maghrib: "17:56", isya: "19:11" },
+            { tanggal: "3 Ramadan 1446 H", imsak: "04:13", subuh: "04:23", dzuhur: "11:43", ashar: "15:02", maghrib: "17:57", isya: "19:12" }
+        ];
+
+        // Fungsi untuk mengisi tabel jadwal
+        function populateSchedule() {
+            const tbody = document.getElementById('schedule-body');
+            tbody.innerHTML = '';
+            jadwalData.forEach(item => {
+                const row = `
+                    <tr class="border-b hover:bg-gray-50">
+                        <td class="p-3">${item.tanggal}</td>
+                        <td class="p-3">${item.imsak}</td>
+                        <td class="p-3">${item.subuh}</td>
+                        <td class="p-3">${item.dzuhur}</td>
+                        <td class="p-3">${item.ashar}</td>
+                        <td class="p-3">${item.maghrib}</td>
+                        <td class="p-3">${item.isya}</td>
+                    </tr>
+                `;
+                tbody.innerHTML += row;
+            });
+        }
+
+        // Event listener untuk pencarian
+        document.getElementById('search').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const filteredData = jadwalData.filter(item => 
+                item.tanggal.toLowerCase().includes(searchTerm)
+            );
+            jadwalData = filteredData;
+            populateSchedule();
+        });
+
+        // PWA Installation Prompt
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            // Tampilkan tombol install
+            const installButton = document.createElement('button');
+            installButton.textContent = 'Install Aplikasi';
+            installButton.className = 'fixed bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-blue-700';
+            installButton.onclick = () => {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted install');
+                    }
+                    deferredPrompt = null;
+                });
+            };
+            document.body.appendChild(installButton);
+        });
+
+        // Register Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registered');
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed:', err);
+                    });
+            });
+        }
+
+        // Inisialisasi
+        document.addEventListener('DOMContentLoaded', function() {
+            populateSchedule();
+        });
+    </script>
+</body>
+</html>
